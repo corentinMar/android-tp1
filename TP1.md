@@ -1,3 +1,5 @@
+Version imagée : https://drive.google.com/file/d/1g6Blkt4DByRFj8a-7IV3b4SzL9PtKpW1/view?usp=sharing
+
 # TP1 Prise d'Android Studio et de Kotlin
 
 ## 1. Paramétrer l’environnement Android Studio
