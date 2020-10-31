@@ -883,7 +883,7 @@ Toujours aussi simple ! Oui, nous venons de créer un singleton. Efficacité max
 
 <hr/>
 
-J'aurais pu vous présenter également les extensions, allé un peu plus dans le détail sur certaines parties... mais ce n'est pas l'objet principal de ce cours. Normalement, vous avez les bases pour coder en Kotlin. Des sites comme Openclassroom ou simplement la documentation de Kotlin vous aiderons à en savoir plus. 😉
+J'aurais pu vous présenter également les extensions, aller un peu plus dans le détail sur certaines parties... mais ce n'est pas l'objet principal de ce cours. Normalement, vous avez les bases pour coder en Kotlin. Des sites comme Openclassroom ou simplement la documentation de Kotlin vous aiderons à en savoir plus. 😉
 
 <div style="page-break-after: always;"></div>
 
