@@ -1,4 +1,4 @@
-Version imagée : https://drive.google.com/file/d/1g6Blkt4DByRFj8a-7IV3b4SzL9PtKpW1/view?usp=sharing
+Version imagée : https://drive.google.com/file/d/1f9ywsQ4TfehybrbwiWWstCpodBahxt4v/view?usp=sharing
 
 # TP1 Prise d'Android Studio et de Kotlin
 
@@ -36,6 +36,8 @@ Découvrons un peu les fichiers que nous allons manipuler.
 ### 1.2.1 AndroidManifest.xml
 
 On se souvient avoir évoqué les 4 principaux composants de notre application : les **Activités**, les **Services**, les **Récepteurs d’intentions** et **Fournisseurs de contenu**. C'est ici que nous les définirons. Mais pas que puisque on retrouve également son ID (package), les paramètres comme le nom, le thème ou encore les autorisations nécessaires pour intéragir avec le système (localisation, photo, internet...).
+
+<div style="page-break-after: always;"></div>
 
 Voici le fichier généré lors de la création d'une application :
 
@@ -120,20 +122,22 @@ Les propriétés et la configuration de notre projet seront déclarées dans le 
 
 Pour plus de détails, rendez-vous ici : [Configure your build](https://developer.android.com/studio/build)
 
+<div style="page-break-after: always;"></div>
+
 Les dépendances requises pour ce TP.
 
 ```gradle
 ...
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'androidx.core:core-ktx:1.0.2'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    implementation 'com.google.android.material:material:1.0.0'
+     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10"
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'com.google.android.material:material:1.2.1'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.2.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
 }
 ```
@@ -187,6 +191,8 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
+<div style="page-break-after: always;"></div>
+
 Notre activité est de type *AppCompatActivity*. C'est la classe de base pour les activités utilisant les fonctionnalités de la barre d’action. <br/>
 La vue **res/layout/activity_main.xml** à l'écran est basée sur un *ConstrainLayout* qui contient une simple *TextView*.
 
@@ -214,6 +220,8 @@ La vue **res/layout/activity_main.xml** à l'écran est basée sur un *Constrain
 
 Le résultat est simple<br/>
 ![Application Hello World !](activity.png)
+
+<div style="page-break-after: always;"></div>
 
 ### 1.5.1 Création de notre premier layout
 
@@ -279,6 +287,8 @@ Ajoutons désormais un deuxième *TextView* ainsi qu'un *EditText* et un *Button
 
 Bon, ça ne ressemble pas à grand chose ! Alors il faut structurer.<br />
 ![Application Nom](activity1.png)
+
+<div style="page-break-after: always;"></div>
 
 Voici le nouveau code de la vue de l'activité :
 ```xml
@@ -352,6 +362,8 @@ Un exemple simple pour une vue B ```app:layout_constraintLeft_toLeftOf="A"``` qu
 ![Alignement horizontal](alignment-constraint_2x.png)
 
 Toutes les possibilités sont ici : [Constraint Layout Params](https://developer.android.com/reference/androidx/constraintlayout/widget/ConstraintLayout)
+
+<div style="page-break-after: always;"></div>
 
 Bref passons au code et au résultat !
 
@@ -455,6 +467,8 @@ En résumé :
 + On déclare nos resources textes dans le fichier ```values/res/strings.xml```, nos resources couleurs dans le fichier ```values/res/colors.xml``` et nos styles dans le fichier, nos resources couleurs dans le fichier ```values/res/styles.xml```
 + ```ConstraintLayout``` permet de créer des mises en page plus performantes et plus flexibles en se définissant la position d'une vue en fonction des autres vues
 + Les avantages du ```ConstraintLayout``` sont notamment qu'il permet de réaliser des vues plus responsive et d'éviter la multiplication des imbrications de ```LinearLayout``` et ```RelativeLayout```
+
+<div style="page-break-after: always;"></div>
 
 # 2 Kotlin
 
@@ -650,6 +664,8 @@ Le ```switch``` de java est remplacé par ```when```
 
 Les syntaxes de bases sont [à retrouver ici](https://kotlinlang.org/docs/reference/basic-syntax.html)
 
+<div style="page-break-after: always;"></div>
+
 ## 2.5 C'est la classe
 
 On va terminer cette découverte de Kotlin par les classes. Cette partie ne va pas déroger à la règle de la simplification. 
@@ -840,6 +856,8 @@ import utils.URL
 import utils.equal
 ```
 
+<div style="page-break-after: always;"></div>
+
 Par contre, si on souhaite que notre classe possède des fonctions statiques dans le but de les utiliser sans que l'objet soit instancié, il faudra procéder avec l'objet ```companion```.
 
 ```kotlin
@@ -866,6 +884,8 @@ Toujours aussi simple ! Oui, nous venons de créer un singleton. Efficacité max
 <hr/>
 
 J'aurais pu vous présenter également les extensions, allé un peu plus dans le détail sur certaines parties... mais ce n'est pas l'objet principal de ce cours. Normalement, vous avez les bases pour coder en Kotlin. Des sites comme Openclassroom ou simplement la documentation de Kotlin vous aiderons à en savoir plus. 😉
+
+<div style="page-break-after: always;"></div>
 
 # 3 Retour à nos moutons 🐑
 
@@ -999,6 +1019,8 @@ Désormais, on va afficher la donnée dans la seconde activité en récupérant 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
+<div style="page-break-after: always;"></div>
+
 ```kotlin
 private var code: Int = 0
 
@@ -1018,6 +1040,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
 ```
 
 ![Création d'une deuxième activité - étape 3](create_activity3.png)
+
 ![Création d'une deuxième activité - étape 4](create_activity4.png)
 
 ## 3.4 Retour à l'envoyeur
