@@ -1,4 +1,4 @@
-Version imagée : https://drive.google.com/file/d/1f9ywsQ4TfehybrbwiWWstCpodBahxt4v/view?usp=sharing
+Version PDF : https://drive.google.com/file/d/1f9ywsQ4TfehybrbwiWWstCpodBahxt4v/view?usp=sharing
 
 # TP1 Prise d'Android Studio et de Kotlin
 
