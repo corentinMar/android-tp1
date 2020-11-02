@@ -285,6 +285,11 @@ Ajoutons désormais un deuxième *TextView* ainsi qu'un *EditText* et un *Button
             android:text="@string/validate"/>
 ```
 
+Sans oublier d'ajouter la variable string dans le fichier de resource.
+```
+<string name="validate">Valider</string>
+```
+
 Bon, ça ne ressemble pas à grand chose ! Alors il faut structurer.<br />
 ![Application Nom](activity1.png)
 
